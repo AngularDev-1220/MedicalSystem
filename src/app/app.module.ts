@@ -8,7 +8,8 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { BootstrapFormComponent } from './components/bootstrap-form/bootstrap-form.component';
 import { BootstrapTableComponent } from './components/bootstrap-table/bootstrap-table.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { RatingComponent } from './components/rating/rating.component';
 
 
 
@@ -17,13 +18,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     JumbotronComponent,
     BootstrapFormComponent,
-    BootstrapTableComponent
+    BootstrapTableComponent,
+    RatingComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbModule
 
 
