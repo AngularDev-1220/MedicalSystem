@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { BootstrapFormComponent } from './components/bootstrap-form/bootstrap-form.component';
 import { BootstrapTableComponent } from './components/bootstrap-table/bootstrap-table.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -22,7 +23,8 @@ import { BootstrapTableComponent } from './components/bootstrap-table/bootstrap-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
 
 
   ],
