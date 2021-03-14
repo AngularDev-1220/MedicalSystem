@@ -10,6 +10,7 @@ import { BootstrapTableComponent } from './components/bootstrap-table/bootstrap-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RatingComponent } from './components/rating/rating.component';
+import { BoystoolbarDirective } from './directives/boystoolbar.directive';
 
 
 
@@ -19,7 +20,8 @@ import { RatingComponent } from './components/rating/rating.component';
     JumbotronComponent,
     BootstrapFormComponent,
     BootstrapTableComponent,
-    RatingComponent
+    RatingComponent,
+    BoystoolbarDirective
 
   ],
   imports: [
