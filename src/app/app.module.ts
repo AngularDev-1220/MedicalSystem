@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { DialogModule } from '@ngneat/dialog';
+
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
@@ -11,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RatingComponent } from './components/rating/rating.component';
 import { BoystoolbarDirective } from './directives/boystoolbar.directive';
+import { MydialogComponent } from './components/mydialog/mydialog.component';
 
 
 
@@ -21,7 +24,8 @@ import { BoystoolbarDirective } from './directives/boystoolbar.directive';
     BootstrapFormComponent,
     BootstrapTableComponent,
     RatingComponent,
-    BoystoolbarDirective
+    BoystoolbarDirective,
+    MydialogComponent
 
   ],
   imports: [
@@ -29,7 +33,8 @@ import { BoystoolbarDirective } from './directives/boystoolbar.directive';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    DialogModule.forRoot(),
 
 
   ],

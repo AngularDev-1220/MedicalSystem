@@ -1,5 +1,8 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, OnInit, VERSION } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import {  DialogService } from '@ngneat/dialog';
+
+
 
 @Component({
   selector: 'app-root',
@@ -8,7 +11,20 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbCarouselConfig]  // add NgbCarouselConfig to the component providers
 
 })
-export class AppComponent  {
+export class AppComponent implements OnInit  {
 
-  currentRate = 0;
+  constructor(private dialog: DialogService) {}
+
+  ngOnInit(): void {
+
+  }
+
+
+  async open(): Promise<void> {
+    const { MydialogComponent } = await import (
+      './components/mydialog/mydialog.component'
+    );
+
+    this.dialog.open(MydialogComponent);
+  }
 }
